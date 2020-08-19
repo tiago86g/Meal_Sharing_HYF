@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --font-display: 'Comfortaa', cursive;
+    --font-system: 'Roboto', sans-serif;
+
+    --color-yellow: #ffb800;
+    --color-orange: #ff4d00;
+    --gradient: linear-gradient(189.18deg, #ffb800 2.38%, #ff4d00 97.4%);
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    /* 1 rem = 10px; 10px/16px = 62.5% */
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    font-family: var(--font-system);
+    font-size: 1.6rem;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    /* border-style: solid; */
+    height: 100%;
+    width: 100%;
+    padding: 0 3%;
+}
+
+aside {
+    /* border-style: solid; */
+    /* background: var(--gradient); */
+    display: grid;
+    place-items: center;
+    height: 8rem;
+    padding: 2.2rem;
+    width: 100%;
+}
+
+section {
+    /* border-style: dotted; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px 5px;
+}
+
+section div img {
+    max-width: 300px;
+    flex: 0 1 150px;
+    margin: 5px;
+}
+
+article {
+    display: grid;
+    place-items: center;
+}
+
+article div {
+    /* background-color: var(--color-yellow); */
+    padding: 5px;
+}
+
+article div img {
+    height: 100%;
+    width: 100%;
+}
+
+a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+h3 {
+    color: var(--color-orange);
+    font-size: 1.5rem;
+}
+
+button {
+    background-color: var(--color-orange);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0px 4px;
+    cursor: pointer;
+}
+
+main>a>h3 {
+    padding: 30px 0;
+    text-align: center;
+    font-size: 3rem;
+}
+
+article>div:hover {
+    background-color: var(--color-yellow);
+}
+
+.nav-btn {
+    display: inline-block;
+    border: none;
+    padding: 2rem 3rem;
+    margin: 0;
+    text-decoration: none;
+    background: var(--color-orange);
+    /* color: #ffffff; */
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    text-align: center;
+    /* transition: background 250ms ease-in-out, transform 150ms ease;
+    -webkit-appearance: none;
+    -moz-appearance: none; */
+}
+
+.nav-btn:hover {
+    background: var(--gradient);
+}
+
+/* .nav-btn:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px;
+} */
