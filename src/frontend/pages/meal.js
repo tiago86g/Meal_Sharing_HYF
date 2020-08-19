@@ -29,6 +29,7 @@ window.handleMealRequest = params => {
               <h2>${meal[0].title}</h2>
               <h3>Where: ${meal[0].location}</h3>
               <p>Description: ${meal[0].description}</p>
+              <p>Price: <strong>${meal[0].price}<strong></p>
               <img src="../img/meal_${meal[0].title}.jpg" alt="">
             </div>
             <form  action= "../../api/reservations" method="post">
