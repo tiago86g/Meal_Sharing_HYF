@@ -32,7 +32,7 @@ window.handleHomeRequest = () => {
               <div>
                 <h2>${meal.title}</h2>
                 <h3>Where: ${meal.location}</h3>
-                <img src="img/meal_${meal.id}.jpg" alt="">
+                <img src="img/meal_${meal.title}.jpg" alt="">
               </div>
               <div>
                 <button>more</button>
